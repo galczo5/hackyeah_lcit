@@ -20,7 +20,12 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "@fortawesome/fontawesome-free": "^6.2.1",
+    "@types/gsap": "^3.0.0",
+    "@types/scrollmagic": "^2.0.2",
+    "gsap": "^3.11.3",
     "rxjs": "~7.5.0",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugins": "^1.0.8",
     "tailwindcss": "^3.2.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -1,0 +1,83 @@
+$selector: "scene";
+
+.hero {
+	margin-bottom: 128px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .5);
+		z-index: 0;
+	}
+
+	&__background {
+		z-index: -1;
+	}
+
+	&__container {
+		padding-left: 10vw;
+		z-index: 10;
+	}
+
+	&__title {
+		font-size: 1rem;
+		line-height: 1em;
+	}
+
+	&__description {
+		font-size: 2rem;
+		line-height: 1.2em;
+	}
+}
+
+.compost {
+	margin-bottom: 128px;
+	line-height: 1.8em;
+}
+
+.block {
+	&__content {
+		padding-top: 96px;
+		opacity: 0;
+		transform: translate(-10px, -30px);
+		transition-property: opacity, transform;
+		transition-duration: .8s;
+		transition-timing-function: ease-in-out;
+
+		&--visible {
+			opacity: 1;
+			transform: translate(0);
+		}
+	}
+
+	&__title {
+		font-size: 2rem;
+		line-height: 1.2em;
+	}
+
+	&__image-wrapper {
+		height: 80vh;
+		opacity: 0;
+		transform: translateY(20px);
+		transition-property: opacity, transform;
+		transition-duration: .8s;
+		transition-timing-function: ease-in-out;
+
+		&--visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+
+.contact {
+	background-color: #f8f8f2;
+
+	&__image-wrapper {
+		height: 420px;
+	}
+}
